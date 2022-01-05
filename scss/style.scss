@@ -1,0 +1,113 @@
+@import "null-style";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+body {
+   background: url("../img/bg-img/Group2.png") bottom right no-repeat, url("../img/bg-img/Group.png") bottom left no-repeat, #29253b;;
+   font-family: $fontF;
+   color: $color;
+}
+.form-block {
+   background: url("../img/bg-img/Group3.png") right center/400px  no-repeat;
+   width: 1240px;
+   height: 100%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+form {
+   margin: 0 auto;
+   width: $size;
+   height: $size;
+   padding: 48px 91px 47px 96px;
+
+   border: 2px solid $color;
+   border-radius: 40px;
+   background: #ffffff1a;
+   backdrop-filter: blur(15px);
+
+   h1, h2 {
+      font-weight: bold;
+      letter-spacing: 1px;
+   }
+   h2 {
+      font-size: 24px;
+      padding: 0 0 13px 0;
+   }
+   h1 {
+      font-size: 34px;
+      padding: 0 0 26px 0;
+   }
+   label {
+      font-size: 18px;
+      font-weight: 100;
+   }
+   input {
+      width: $width;
+      height: 50px;
+      border-radius: 10px;
+      padding: 0 0 0 23px;
+
+      &::placeholder {
+         font-size: 14px;
+      }
+      
+   }
+   .input-email {
+      margin: 5px 0 47px 0;
+   }
+   .input-password {
+      margin: 5px 0 0 0;
+   }
+   a {
+      display: inline-block;
+      color: $color;
+      margin: 17px 0 42px 0;
+      font-weight: 100;
+   }
+   button {
+      width: $width;
+      height: 50px;
+      text-align: center;
+      color: $color;
+      background-color: #BD0C47;
+      border-radius: 10px;
+      font-size: 20px;
+      margin: 0 0 32px 0;
+      transition-duration: .3s;
+      transition-property: all;
+      animation-timing-function: ease-in-out;
+      transition-delay: 0s;
+
+      &:hover {
+         background-color: $bgColor;
+         width: 550px;
+      }
+   }
+   p {
+      text-align: center;
+      font-weight: 100;
+      
+      a {
+         font-weight: 500;
+      }
+   }
+}
+.link-block {
+   display: inline-flex;
+   justify-content: space-between;
+   width: 100%;
+   a {
+      width: 150px;
+      height: 50px;
+      background-color: $color;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+         background-color: $bgColor;
+         transition: .2s;
+      }
+   }
+}

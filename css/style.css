@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: url("../img/bg-img/Group2.png") bottom right no-repeat, url("../img/bg-img/Group.png") bottom left no-repeat, #29253b;
+  font-family: Roboto;
+  color: #ffffff;
+}
+
+.form-block {
+  background: url("../img/bg-img/Group3.png") right center/400px no-repeat;
+  width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 690px;
+  height: 690px;
+  padding: 48px 91px 47px 96px;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  background: #ffffff1a;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+form h1, form h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+form h2 {
+  font-size: 24px;
+  padding: 0 0 13px 0;
+}
+form h1 {
+  font-size: 34px;
+  padding: 0 0 26px 0;
+}
+form label {
+  font-size: 18px;
+  font-weight: 100;
+}
+form input {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 0 0 23px;
+}
+form input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+form input::-moz-placeholder {
+  font-size: 14px;
+}
+form input:-ms-input-placeholder {
+  font-size: 14px;
+}
+form input::-ms-input-placeholder {
+  font-size: 14px;
+}
+form input::placeholder {
+  font-size: 14px;
+}
+form .input-email {
+  margin: 5px 0 47px 0;
+}
+form .input-password {
+  margin: 5px 0 0 0;
+}
+form a {
+  display: inline-block;
+  color: #ffffff;
+  margin: 17px 0 42px 0;
+  font-weight: 100;
+}
+form button {
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #BD0C47;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 0 0 32px 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+form button:hover {
+  background-color: #442a4e;
+  width: 550px;
+}
+form p {
+  text-align: center;
+  font-weight: 100;
+}
+form p a {
+  font-weight: 500;
+}
+
+.link-block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.link-block a {
+  width: 150px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.link-block a:hover {
+  background-color: #442a4e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
